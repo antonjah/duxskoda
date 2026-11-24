@@ -2,9 +2,12 @@
 
 Your Škoda in your [Dux Shell](https://github.com/duxlabs-dev/dux-shell) bar. The charge sits in the bar; click it for range, charging status, doors and locks, odometer, and the air conditioning, which you can start and stop from there.
 
-![charging](docs/charging.png)
-
-![climate](docs/climate.png)
+<table>
+<tr>
+<td valign="top"><img src="docs/charging.png" width="400" alt="Charging"></td>
+<td valign="top"><img src="docs/climate.png" width="400" alt="Climate running"></td>
+</tr>
+</table>
 
 It uses the official [MyŠkoda Public API](https://public.api.connect.skoda-auto.cz/docs): a free API key you create in the MyŠkoda app. No OAuth, no cloud account in the plugin. The API is for personal use only.
 
