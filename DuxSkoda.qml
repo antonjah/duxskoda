@@ -70,7 +70,7 @@ PluginComponent {
     readonly property bool lowCharge: !!m && m.soc !== null && m.soc < 20
     readonly property color accent: !m ? Theme.primary : m.charging ? Theme.success : lowCharge ? Theme.error : Theme.primary
     readonly property color pillColor: !m ? (st.error ? Theme.error : Theme.surfaceText) : m.charging ? Theme.success : lowCharge ? Theme.error : Theme.surfaceText
-    readonly property string pillIcon: !m ? "electric_car" : st.error ? "cloud_off" : Skoda.batteryIcon(m.soc, m.charging)
+    readonly property string pillIcon: st.error && m ? "cloud_off" : "electric_car"
     readonly property string pillNumber: m && m.soc !== null ? String(m.soc) : (st.error ? "!" : "…")
     readonly property string pillText: pillNumber + (m && m.soc !== null ? " %" : "")
     // An A/C request is pending until the car reports the new state (or a few minutes pass).

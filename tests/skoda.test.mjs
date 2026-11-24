@@ -203,10 +203,6 @@ test("formatting", () => {
     assert.equal(S.fmtDuration(45), "45 min");
     assert.equal(S.unitSymbol("CELSIUS"), "°C");
     assert.equal(S.unitSymbol("FAHRENHEIT"), "°F");
-    assert.equal(S.batteryIcon(76, false), "battery_5_bar");
-    assert.equal(S.batteryIcon(96, false), "battery_full");
-    assert.equal(S.batteryIcon(5, true), "battery_charging_full");
-    assert.equal(S.batteryIcon(null, false), "battery_unknown");
     assert.equal(S.vehicleUrl("http://x:1/", "TMB1"), "http://x:1/api/v1/vehicles/TMB1");
     assert.equal(S.vehicleUrl("", "TMB1"), "https://public.api.connect.skoda-auto.cz/api/v1/vehicles/TMB1");
 });

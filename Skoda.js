@@ -216,12 +216,3 @@ function fmtDuration(minutes) {
 function unitSymbol(unit) {
     return unit === "FAHRENHEIT" ? "°F" : "°C"
 }
-
-// Material Symbols battery glyph for a charge level.
-function batteryIcon(soc, charging) {
-    if (charging)
-        return "battery_charging_full"
-    if (soc === null || soc === undefined)
-        return "battery_unknown"
-    return soc >= 95 ? "battery_full" : "battery_" + Math.round(soc / 100 * 6) + "_bar"
-}

@@ -55,7 +55,7 @@ Rectangle {
 
                 DIcon {
                     anchors.centerIn: parent
-                    name: tile.m ? Skoda.batteryIcon(tile.m.soc, tile.m.charging) : ""
+                    name: "electric_car"
                     size: Theme.iconSize
                     color: tile.accent
                 }
