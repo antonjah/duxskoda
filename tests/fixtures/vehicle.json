@@ -1,0 +1,185 @@
+{
+  "vehicle": {
+    "airConditioning": {
+      "state": "HEATING",
+      "airConditioningAtUnlock": false,
+      "carCapturedTimestamp": "2026-11-24T14:36:34Z",
+      "estimatedReachOfTargetTemperatureAt": "2026-11-24T14:59:09.089322726Z",
+      "targetTemperature": {
+        "value": 21.0,
+        "unit": "CELSIUS"
+      },
+      "windowHeating": {
+        "enabled": false,
+        "front": "OFF",
+        "rear": "OFF"
+      }
+    },
+    "charging": {
+      "isVehicleInSavedLocation": false,
+      "carCapturedTimestamp": "2026-11-24T14:28:34Z",
+      "settings": {
+        "autoUnlockPlugWhenCharged": "OFF",
+        "availableChargeModes": [
+          "MANUAL"
+        ],
+        "batteryCareModeTargetValueInPercent": 80,
+        "chargingCareMode": "ACTIVATED",
+        "maxChargeCurrentAc": "MAXIMUM",
+        "preferredChargeMode": "MANUAL",
+        "targetStateOfChargeInPercent": 100
+      },
+      "status": {
+        "battery": {
+          "remainingCruisingRangeInMeters": 270000,
+          "stateOfChargeInPercent": 76
+        },
+        "chargePowerInKw": 0.0,
+        "fullyChargedAt": "2026-11-24T14:28:34Z",
+        "plugConnectionState": "DISCONNECTED",
+        "plugLockState": "UNLOCKED",
+        "remainingTimeToFullyChargedInMinutes": 0,
+        "state": "CONNECT_CABLE"
+      }
+    },
+    "chargingProfiles": {
+      "profiles": [
+        {
+          "id": 1,
+          "name": "Hemma",
+          "settings": {
+            "autoUnlockPlugWhenCharged": "PERMANENT",
+            "maxChargingCurrent": "MAXIMUM",
+            "minBatteryStateOfCharge": {
+              "minimumBatteryStateOfChargeInPercent": 0
+            },
+            "targetStateOfChargeInPercent": 80
+          },
+          "preferredChargingTimes": [
+            {
+              "id": 1,
+              "enabled": false,
+              "startTime": "22:00",
+              "endTime": "06:00"
+            },
+            {
+              "id": 2,
+              "enabled": false,
+              "startTime": "22:00",
+              "endTime": "06:00"
+            },
+            {
+              "id": 3,
+              "enabled": false,
+              "startTime": "22:00",
+              "endTime": "06:00"
+            },
+            {
+              "id": 4,
+              "enabled": false,
+              "startTime": "22:00",
+              "endTime": "06:00"
+            }
+          ],
+          "timers": [
+            {
+              "id": 1,
+              "enabled": true,
+              "type": "RECURRING",
+              "recurringOn": [
+                "MONDAY",
+                "TUESDAY",
+                "WEDNESDAY",
+                "THURSDAY",
+                "FRIDAY"
+              ],
+              "time": "06:55"
+            },
+            {
+              "id": 2,
+              "enabled": false,
+              "type": "RECURRING",
+              "recurringOn": [
+                "SATURDAY",
+                "SUNDAY"
+              ],
+              "time": "09:00"
+            },
+            {
+              "id": 3,
+              "enabled": false,
+              "type": "RECURRING",
+              "recurringOn": [
+                "MONDAY",
+                "TUESDAY",
+                "WEDNESDAY",
+                "THURSDAY",
+                "FRIDAY",
+                "SATURDAY",
+                "SUNDAY"
+              ],
+              "time": "07:00"
+            }
+          ]
+        }
+      ],
+      "carCapturedTimestamp": "2026-11-24T14:28:30.982Z"
+    },
+    "licensePlate": "ABC123",
+    "name": "Enyaq",
+    "odometer": {
+      "mileageInKm": 100363,
+      "carCapturedTimestamp": "2026-11-24T14:28:34Z"
+    },
+    "operations": [
+      {
+        "name": "startCharging"
+      },
+      {
+        "name": "stopCharging"
+      },
+      {
+        "name": "setChargingLimit"
+      },
+      {
+        "name": "setChargeMode"
+      },
+      {
+        "name": "updateChargingProfile"
+      },
+      {
+        "name": "startAirConditioning"
+      },
+      {
+        "name": "stopAirConditioning"
+      }
+    ],
+    "parkingPosition": {
+      "state": "PARKED",
+      "formattedAddress": "Drottninggatan 1, 111 51 Stockholm, Sweden",
+      "gpsCoordinates": {
+        "latitude": 59.3293,
+        "longitude": 18.0686
+      }
+    },
+    "renderUrl": "https://example.invalid/render.png",
+    "status": {
+      "overall": {
+        "doorsLocked": "YES",
+        "locked": "YES",
+        "doors": "CLOSED",
+        "windows": "CLOSED",
+        "lights": "OFF",
+        "reliableLockStatus": "LOCKED"
+      },
+      "detail": {
+        "sunroof": "UNSUPPORTED",
+        "trunk": "CLOSED",
+        "bonnet": "CLOSED"
+      },
+      "carCapturedTimestamp": "2026-11-24T14:28:29.3Z"
+    },
+    "vin": "TMBTEST0123456789"
+  },
+  "errors": []
+}
